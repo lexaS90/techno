@@ -1,0 +1,48 @@
+@import "bootstrap.scss";
+@import "bourbon";
+@import "vars.scss";
+@import "fonts.scss";
+@import "default.scss";
+
+.page__header-line{	
+	@include clearfix();
+	min-height: 200px;
+	@include background(linear-gradient(#E4E4E4, #FFFFFF));
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-header{
+	@extend .container;
+}
+
+.main-header__row{
+	@extend .row;
+}
+
+.main-header__logo{
+	@extend .col-md-4;
+}
+
+.main-header__nav{
+	@extend .col-md-4;
+}
+
+.main-header__right{
+	@extend .col-md-4;
+}
+
+.call{
+	font-family: LatoBold, $verdana;
+	font-size: em(32px);
+}
+
+.call__label{
+	
+}
+
+.call__phone{
+	color: $accentColor;
+}
+
+@import "media.scss";
