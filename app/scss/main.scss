@@ -14,10 +14,11 @@
 
 .main-header{
 	@extend .container;
+	position: relative;	
 }
 
 .main-header__row{
-	@extend .row;
+	@extend .row;	
 }
 
 .main-header__logo{
@@ -25,24 +26,91 @@
 }
 
 .main-header__nav{
-	@extend .col-md-4;
-}
-
-.main-header__right{
-	@extend .col-md-4;
+	@extend .col-md-6;
+	position: static;
 }
 
 .call{
 	font-family: LatoBold, $verdana;
 	font-size: em(32px);
+	&__phone{
+		color: $accentColor;
+	}
 }
 
-.call__label{
-	
+.main-menu{
+	&__item{
+		display: inline-block;
+		margin-right: 14px;
+	}
+	&__link_drop{
+		position: relative;
+		padding-right: 10px;
+		&::after{
+			content: "";
+			font-family: FontAwesome;
+			margin-left: 2px;
+			position: absolute;
+			top:2px;
+			color: #ada8a1;
+		}
+	}
+	&__item_drop{
+		&:hover .drop-menu{			
+			max-height: 10000px;
+			border:1px solid #dfdedd;
+			@include transition(all 0.2s ease-in);
+		}
+	}
 }
 
-.call__phone{
-	color: $accentColor;
+.drop-menu{
+	max-height: 0;
+	overflow: hidden;
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top:100px;
+	border-radius: 4px;
+	border:0px solid #dfdedd;
+	box-sizing:border-box;
+	@include transition(all 0.2s ease-out 0.3s);
+	@extend .container-fluid;
+	&__row{
+		@extend .row;
+		padding-top: 20px;		
+	}
+	&__cat{
+		@extend .col-md-3;
+		margin-bottom: 20px;
+		&:nth-child(5){
+			clear: both;
+		}
+	}
+	&__cat_link{
+		text-transform: uppercase;
+		color: #000;
+		border-bottom: 1px solid #e1e1e1;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	&__sub_cat{
+		margin-left: 6px;
+		margin-top: 8px;
+	}
+	&__sub_cat_link{
+		color: #777;
+		padding-top:5px;
+		padding-bottom:5px;
+		font-size: em(13px);
+		line-height: em(20px);
+	}
+}
+
+.main-header__right{
+	@extend .col-md-2;
 }
 
 @import "media.scss";

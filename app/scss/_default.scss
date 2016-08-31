@@ -12,17 +12,24 @@ body{
     font-family: Lato, $verdana;
 }
 
-.g-list-menu{
+.g-list{
     list-style-type: none;
-    a{
+    padding-left: 0;
+    margin-left: 16px;
+    &__link, &__link:focus{
         font-size: em(15px);
         color: #333;
         display: block;
         position: relative;
+        padding-left: 14px;
+        text-decoration: none;
         @include transition(color 0.2s ease-in-out);
         &:hover{
             text-decoration: none;
             color: $accentColor;
+        }
+        &.g-list-menu__link_active{
+            color:$accentColor;
         }
         &::before{
             color: #fa5a0c;
@@ -31,8 +38,11 @@ body{
             font-size: 8px;
             line-height: 2px;
             position: absolute;
-            top: 12px;
-            left:-16px;
+            height: 6px;
+            left: 0px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
         }
     }
 }
