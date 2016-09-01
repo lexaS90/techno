@@ -1,4 +1,7 @@
-$(document ).ready(function(){
+$(document ).ready(function(){	 
+	 $("#currencies").select2({
+	 	minimumResultsForSearch: -1,
+	 });
 
 });
 

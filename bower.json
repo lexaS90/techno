@@ -25,6 +25,12 @@
       "main": [
         "./css/font-awesome.min.css"
       ]
+    },
+    "select2" : {
+      "main" : [
+        "dist/js/select2.js",
+        "dist/css/select2.min.css"
+      ]
     }
   },
   "devDependencies": {}
