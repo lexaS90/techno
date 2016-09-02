@@ -3,3 +3,4 @@
 
 @include font-face("Lato", "../fonts/Lato/LatoRegular/LatoRegular", $file-formats: eot ttf woff);
 @include font-face("LatoBold", "../fonts/Lato/LatoBold/LatoBold", $file-formats: eot ttf woff);
+@include font-face("LatoLight", "../fonts/Lato/LatoLight/LatoLight", $file-formats: eot ttf woff);

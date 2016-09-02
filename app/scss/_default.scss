@@ -12,10 +12,25 @@ body{
     font-family: Lato, $verdana;
 }
 
+input{
+    border:1px solid #d6d4d4;
+    color: #888682;
+    font-size: em(14px);
+    border-radius: 2px;
+}
+
+a{
+    @include transition(all 0.1s ease-out);
+    &:hover,
+    &:focus{
+        color: $accentColor;
+        text-decoration: none;
+    }
+}
+
 .g-list{
     list-style-type: none;
     padding-left: 0;
-    margin-left: 16px;
     &__link, &__link:focus{
         font-size: em(15px);
         color: #333;
@@ -50,16 +65,46 @@ body{
 .select2-container--default .select2-selection--single{
     border: 1px solid #d0cfcf;
     border-radius: 0;
-    padding: 8px 20px 8px 2px;        
+    height: 34px;         
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
     color: #777;
-    line-height: 15px;
+    line-height: 36px;
     font-size: 13px;
     font-weight: normal;
+    // padding: 16px 20px 30px 2px;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 3px;
+}
+
+.select2-container--default .select2-results > .select2-results__options{
+   margin:4px;
+   margin-bottom: 3px;
+   font-family: LatoLight, $verdana;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected="true"]
+{
+    background-color: $accentColor;
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"]{
+    color: #fff;
+}
+
+.select2-results__option{
+    // padding: 2px 0 2px 2px;
+    margin-bottom: 1px; 
+    font-size: em(13px); 
+}
+
+.select2-container--open .select2-dropdown--below{
+    border-radius: 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

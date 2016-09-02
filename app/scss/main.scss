@@ -17,8 +17,9 @@
 	position: relative;	
 }
 
-.main-header__row{
-	@extend .row;	
+.main-header__top{
+	@extend .row;
+	margin-bottom: 16px;
 }
 
 .main-header__logo{
@@ -38,7 +39,7 @@
 	}
 }
 
-.main-menu{
+.main-menu{	
 	&__item{
 		display: inline-block;
 		margin-right: 14px;
@@ -59,7 +60,7 @@
 		&:hover .drop-menu{			
 			max-height: 10000px;
 			border:1px solid #dfdedd;
-			@include transition(all 0.2s ease-in);
+			@include transition(all 0.8s ease-in);
 		}
 	}
 }
@@ -80,11 +81,12 @@
 	border-radius: 4px;
 	border:0px solid #dfdedd;
 	box-sizing:border-box;
-	@include transition(all 0.2s ease-out 0.3s);
+	z-index: 100;
+	@include transition(all 0.8s ease-out 0.1s);
 	@extend .container-fluid;
 	&__row{
 		@extend .row;
-		padding-top: 20px;		
+		padding-top: 20px;
 	}
 	&__cat{
 		@extend .col-md-3;
@@ -115,6 +117,62 @@
 
 .main-header__right{
 	@extend .col-md-2;
+}
+
+.currencies{
+	float: right;
+	margin-bottom: 8px;
+	&__label{
+		font-size: em(13px);
+		font-weight: normal;
+		color: #56534e;
+	}
+}
+
+.authorization{
+	text-align: right;
+	font-size: em(18px);
+	&__new-accaunt,
+	&__login{
+		display: block;
+		color: #000;
+		line-height: em(20px);
+	}
+}
+
+.main-header__bottom{
+	@extend .row;
+}
+
+.search{
+	@extend .col-md-10;
+	position: relative;
+	padding-right: 0;
+	&__form{
+		width: 100%;
+		padding: 10px 25px 10px 10px;
+	}
+	&__submit{
+		position: absolute;
+		font-family: FontAwesome;
+		padding: 10px 26px;
+		border: none;
+		border: 1px solid #d6d4d4;
+		border-radius: 0 2px 2px 0;		
+		background-color: #fff;
+		right: 0px;
+		top: 0px;
+		bottom: 0;
+		text-align: center;
+		color: #000;
+		font-size: em(18px);
+		line-height: 20px;
+		@include background(linear-gradient(#FFFFFF, #E4E4E4));
+		&:hover{
+			color: $accentColor;
+			@include transition(all 0.2s ease-in);
+		}
+	}
 }
 
 @import "media.scss";
