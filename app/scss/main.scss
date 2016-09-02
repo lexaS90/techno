@@ -175,4 +175,41 @@
 	}
 }
 
+.header-cart{
+	@extend .col-md-2;
+}
+
+.main-cart{
+	height: 54px;
+	width: 226px;
+	border: 1px solid #e35916;
+  border-radius: 3px 3px 0 0;
+  display: block;
+  @include linear-gradient(to bottom, #fc7601 0%, #fb6806 49%, #fa5b0c 100%);  
+  padding-left: 44px;
+  position: relative;
+  &__icon{
+		font-family: "FontAwesome";
+	  color: #fff;
+	  font-size: em(36px);
+	  line-height: em(24px);
+  }
+  &__count{
+		background-color: #000;
+		position: absolute;
+		top: 4px;
+		bottom: 4px;
+		right: 4px;
+		width: 86px;
+		@include linear-gradient(to bottom, #343434 0%, #3a3a3a 49%, #414040 100%);
+		border: 1px solid #000;
+		border-radius: 3px;
+		color: #fff;
+		font-size: em(22px);
+		text-align: center;
+		line-height: em(32px);
+
+  }
+}
+
 @import "media.scss";
