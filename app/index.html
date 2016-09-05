@@ -13,6 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/vendor/select2/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="/vendor/owl-carousel/owl-carousel/owl.carousel.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
@@ -115,15 +116,59 @@
         <div class="main-header__bottom">
           <div class="search"> <input type="text" class="search__form" placeholder="Поиск..."> <input type="submit" value="" class="search__submit"> </div>
           <div class="header-cart">
-            <a href="#" class="main-cart">
-              <div class="main-cart__icon"></div>
-              <div class="main-cart__count">238</div>
+            <a href="#" class="mini-cart">
+              <div class="mini-cart__icon"></div>
+              <div class="mini-cart__count">238</div>
             </a>
           </div>
         </div>
       </header>
     </div>
     <!-- Header End -->
+    <div class="page__main-line">
+      <div class="page__main-wrap">
+        <div class="main">
+          <div class="main__sidebar">
+            <div class="panel panel-black">
+              <div class="panel-heading">Категории</div>
+              <nav class="panel-body">
+                <ul class="left-menu g-list">
+                  <li class="left-menu__item"> <a href="#" class="left-menu__link g-list__link">Категория 1</a> </li>
+                  <li class="left-menu__item"> <a href="#" class="left-menu__link g-list__link">Категория 2</a> </li>
+                  <li class="left-menu__item"> <a href="#" class="left-menu__link g-list__link">Категория 3</a> </li>
+                  <li class="left-menu__item"> <a href="#" class="left-menu__link g-list__link">Категория 4</a> </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="main__content">
+            <div class="main-slider" id="main-slider">
+              <div class="main-slider__slide">
+                <div class="main-slider__content">
+                  <div class="main-slider__title"> Lorem ipsum dolor sit amet, consectetur. </div>
+                  <div class="main-slider__price"> Всего <strong>1257 грн.</strong> </div>
+                </div>
+                <div class="main-slider__img-wrap"> <img src="img/slider/slide_1.jpg" alt="alt" class="main-slider__img"> </div>
+              </div>
+              <div class="main-slider__slide">
+                <div class="main-slider__content">
+                  <div class="main-slider__title"> Lorem ipsum dolor sit amet, consectetur. </div>
+                  <div class="main-slider__price"> Всего <strong>1257 грн.</strong> </div>
+                </div>
+                <div class="main-slider__img-wrap"> <img src="img/slider/slide_2.jpg" alt="alt" class="main-slider__img"> </div>
+              </div>
+              <div class="main-slider__slide">
+                <div class="main-slider__content">
+                  <div class="main-slider__title"> Lorem ipsum dolor sit amet, consectetur. </div>
+                  <div class="main-slider__price"> Всего <strong>1257 грн.</strong> </div>
+                </div>
+                <div class="main-slider__img-wrap"> <img src="img/slider/slide_3.jpg" alt="alt" class="main-slider__img"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Code -->
     <div class="hidden"></div>
     <!-- build:js js/vendor.min.js -->
@@ -131,6 +176,7 @@
     <script src="/vendor/jquery/dist/jquery.js"></script>
     <script src="/vendor/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="/vendor/select2/dist/js/select2.js"></script>
+    <script src="/vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/main.min.js -->
