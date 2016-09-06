@@ -117,19 +117,14 @@ img{
 
 .panel{    
     border-radius: 2px;
-    box-shadow:none;
-    .panel-heading{
+    box-shadow:none;    
+}
+.panel-heading{
         text-transform: uppercase;
         font-size: em(20px);
         border-radius: 2px 2px 0 0;
         font-family: LatoBold, $verdana;
     }
-    .panel-body{
-        border: 1px solid #d6d4d4;
-        border-top:none;
-        padding: 0;
-    }
-}
 .panel-black{
     .panel-heading{
         @include linear-gradient(to bottom, #343434 0%, #3a3a3a 49%, #414040 100%);
@@ -137,12 +132,31 @@ img{
         border: 1px solid #000;
     }
 }
+.panel-body{
+        border: 1px solid #d6d4d4;
+        border-top:none;
+        padding: 0;
+    }
 
 .panel-white{
     .panel-heading{
         @include linear-gradient(to bottom, #ffffff 0%, #f4f4f4 50%, #e6e6e6 100%);
         color: #000;
         border: 1px solid #d6d4d4;
+    }
+}
+
+.btn-primary{
+    background-color: $accentColor;
+    border: 1px solid #e35916;
+    border-radius: 3px;
+    color: #fff;
+    padding: 7px 22px;
+    font-size: em(18px);
+    &:hover{
+        background: #333 none repeat scroll 0 0;
+        border: 1px solid #000;
+        color: #fff;
     }
 }
 

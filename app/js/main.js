@@ -1,5 +1,5 @@
 $(document ).ready(function(){	 
-	 
+
 	/*
 	 * Select2
 	 */
@@ -8,18 +8,24 @@ $(document ).ready(function(){
 	 	minimumResultsForSearch: -1,
 	 });
 
-	 /*
+ 	/*
 	 * owlCarousel
 	 */
 
 	 $("#main-slider").owlCarousel({
-      navigation : true,
-      navigationText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-      singleItem : true, 
-      autoPlay:3000,
+	 	navigation : true,
+	 	navigationText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+	 	singleItem : true, 
+	 	autoPlay:3000,
 	 });
 
-		});
+	/*
+	 * equalHeights
+	 */
+
+	 $('.featured-products__product').equalHeights();
+
+});
 
 $(window).scroll(function(){
 

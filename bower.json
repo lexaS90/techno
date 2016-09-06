@@ -19,7 +19,8 @@
     "bootstrap-sass": "^3.3.6",
     "jquery": "2.2.4",
     "select2": "^4.0.3",
-    "owl-carousel": "^1.3.2"
+    "owl-carousel": "^1.3.2",
+    "jQuery.equalHeights": "jquery.equalheights#^1.5.2"
   },
   "overrides": {
     "font-awesome": {
@@ -35,8 +36,8 @@
     },
     "owl-carousel": {
       "main": [
-        "./owl-carousel/owl.carousel.css",  
-        "./owl-carousel/owl.carousel.min.js"     
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.carousel.min.js"
       ]
     }
   },
