@@ -51,10 +51,7 @@ img{
         &:hover{
             text-decoration: none;
             color: $accentColor;
-        }
-        &.g-list-menu__link_active{
-            color:$accentColor;
-        }
+        }        
         &::before{
             color: #fa5a0c;
             content: "";
@@ -68,6 +65,9 @@ img{
             top: 0;
             bottom: 0;
         }
+    }
+    &__link_active{
+        color:$accentColor;
     }
 }
 

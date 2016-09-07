@@ -24,9 +24,18 @@ $(document ).ready(function(){
 	 */
 
 	 $('.featured-products__product').equalHeights();
+	 $('.main-footer__item').equalHeights();
 
 });
 
 $(window).scroll(function(){
 
+});
+
+$(window).resize(function(){
+    $('.featured-products__product').css('height','auto');;
+    $('.featured-products__product').equalHeights();
+
+    $('.main-footer__item').css('height','auto');;
+    $('.main-footer__item').equalHeights();    
 });

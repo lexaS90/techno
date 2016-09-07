@@ -241,8 +241,6 @@
 
 .left-menu{
 	&__item{
-		/* padding-top: 14px;
-		padding-bottom: 16px; */
 		border-bottom: 1px solid #d6d4d4;		
 		padding-left: 20px;		
 		&:last-child{
@@ -251,6 +249,47 @@
 	}
 	&__link{
 		line-height: 50px;
+	}
+}
+
+.special-proposition{
+	&__heading{
+		font-size: em(14px);
+		color: $accentColor;
+		margin-bottom: 10px;
+	}
+	&__body{
+		border: none;
+	}
+}
+
+.special-product{
+	background-color: #F1F1F1;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	border: 1px solid #d6d4d4;
+	display: block;
+	padding: 20px;
+	@include transition(all 0.1s ease-out);
+	&:hover{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	&__name{
+		color: #333;
+    font-size: em(36px);
+    line-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+	}
+	&__img-wrap{
+		margin-bottom: 26px;
+		text-align: center;
+	}
+	&__price{
+		text-align: center;
+		color: $accentColor;
+		font-size: em(20px);
+		font-family: LatoBold, $verdana;
 	}
 }
 
@@ -283,6 +322,7 @@
 	}
 	&__price{
 		font-size: em(46px);
+		line-height: em(14px);
 		color: $accentColor;
 	}
 	.owl-buttons{
@@ -317,7 +357,7 @@
 		@extend .row;
 	}
 	&__item{
-		@extend .col-md-4;
+		@extend .col-md-4, .col-sm-4;
 		margin-bottom: 10px;	
 	}
 	&__product{
@@ -389,6 +429,56 @@
 	}
 
 }
+
+.page__footer-line{
+	@include background(linear-gradient(#E4E4E4, #FFFFFF));
+
+	margin-bottom: 20px;
+}
+
+.main-footer{
+	@extend .container;
+	padding-top: 20px;
+	&__wrap{
+		@extend .row;
+	}
+	&__menu{
+		@extend .col-md-2, .col-sm-2, .col-md-offset-1, .col-sm-offset-1;
+		border-right: 1px solid #d6d4d4;
+	}
+	&__call-us{
+		@extend .col-md-5, .col-md-offset-0, .col-sm-offset-3, .col-sm-5;
+		border-right: 1px solid #d6d4d4;
+	}
+	&__logo{
+		@extend .col-md-3, .col-sm-12;
+	}	
+}
+
+.footer-menu__item{
+	margin-bottom: 4px;
+}
+
+.page__copyright-line{
+	background-color: #F2F2F2;
+}
+
+.copyright-footer{
+	@extend .container;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&__wrap{
+		@extend .row;
+	}
+	&__content{
+		@extend .col-md-12;
+		color: #777;
+    font-size: em(12px);
+    font-family: LatoLight, $verdana;     
+	}
+}
+
+
 
 //	End Main
 
