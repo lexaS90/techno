@@ -23,7 +23,7 @@ $(document ).ready(function(){
 	 * equalHeights
 	 */
 
-	 $('.featured-products__product').equalHeights();
+	 $('.product-list__product').equalHeights();
 	 $('.main-footer__item').equalHeights();
 
 });
@@ -33,8 +33,8 @@ $(window).scroll(function(){
 });
 
 $(window).resize(function(){
-    $('.featured-products__product').css('height','auto');;
-    $('.featured-products__product').equalHeights();
+    $('.product-list__product').css('height','auto');;
+    $('.product-list__product').equalHeights();
 
     $('.main-footer__item').css('height','auto');;
     $('.main-footer__item').equalHeights();    

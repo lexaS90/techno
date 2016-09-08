@@ -146,6 +146,21 @@ img{
     }
 }
 
+.main-panel{
+    .panel-heading{
+        margin-bottom: 10px;
+    }
+    .panel-body{
+        @extend .container-fluid;
+        border: none;
+    }
+    .panel_wrap{
+        @extend .row;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
 .btn-primary{
     background-color: $accentColor;
     border: 1px solid #e35916;

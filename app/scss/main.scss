@@ -356,6 +356,9 @@
 	&__wrap{
 		@extend .row;
 	}
+}
+
+.product-list{	
 	&__item{
 		@extend .col-md-4, .col-sm-4;
 		margin-bottom: 10px;	
@@ -368,7 +371,7 @@
 		border-radius: 3px;
 		&:hover{
 			box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-			.featured-products__btn-wrap{
+			.product-list__btn-wrap{
 				opacity: 1;
 				bottom: -76px;						
 			}
@@ -427,8 +430,22 @@
     	left:20px;
 		}
 	}
-
 }
+
+.category-products-list{
+	&__descr{
+		@extend .col-md-12;
+		font-size: em(13px);
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+//	End Main
+
+//	Main footer
 
 .page__footer-line{
 	@include background(linear-gradient(#E4E4E4, #FFFFFF));
@@ -478,8 +495,6 @@
 	}
 }
 
-
-
-//	End Main
+//	End Main footer
 
 @import "media.scss";
