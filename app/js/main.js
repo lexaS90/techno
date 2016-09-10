@@ -23,8 +23,15 @@ $(document ).ready(function(){
 	 * equalHeights
 	 */
 
-	 $('.product-list__product').equalHeights();
-	 $('.main-footer__item').equalHeights();
+	$('.product-list__product').equalHeights();
+	$('.main-footer__item').equalHeights();
+
+ /*
+	*	product__gallery
+	*/
+
+	$(".product-gallery").fotorama();
+	
 
 });
 

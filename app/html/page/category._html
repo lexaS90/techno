@@ -15,10 +15,16 @@
 			<!-- End Left menu -->
 
 			</div>
-			<div class="main__content">			
+			<div class="main__content">
 
-			<!-- Featured Products -->
-				
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Library</a></li>
+			  <li class="active">Data</li>
+			</ol>		
+
+			<!-- Category Products -->				
+
 				<div class="panel panel-white main-panel category-products-list">
 					<div class="panel-heading">Бытовая техника</div>
 				  <div class="panel-body">
@@ -28,15 +34,54 @@
 					  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, tortor quis aliquam luctus, eros lorem ornare lectus, vitae tincidunt est leo ac lectus
 					  	</div>
 
+					  	<div class="category-products-list__cat">
+
+								<div class="category-inline-list">
+									<div class="category-inline-list__item">
+										<a href="" class="category-inline-list__img-wrap">
+											<img class="category-inline-list__img" src="img/Featured Products/1.png" alt="">
+										</a>
+										<div class="category-inline-list__name">
+											Lacus volutpat
+										</div>
+									</div>
+									<div class="category-inline-list__item">
+										<a href="" class="category-inline-list__img-wrap">
+											<img class="category-inline-list__img" src="img/Featured Products/2_1.png" alt="">
+										</a>
+										<div class="category-inline-list__name">
+											Lacus volutpat
+										</div>
+									</div>
+									<div class="category-inline-list__item">
+										<a href="" class="category-inline-list__img-wrap">
+											<img class="category-inline-list__img" src="img/Featured Products/3.png" alt="">
+										</a>
+										<div class="category-inline-list__name">
+											Lacus volutpat
+										</div>
+									</div>
+									<div class="category-inline-list__item">
+										<a href="" class="category-inline-list__img-wrap">
+											<img class="category-inline-list__img" src="img/Featured Products/4.png" alt="">
+										</a>
+										<div class="category-inline-list__name">
+											Lacus volutpat
+										</div>
+									</div>
+								</div>
+
+					  	</div>
+
 					  	<div class="product-list">
 						  	<div class="product-list__item">
 						  		<div class="product-list__product">
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/1.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
-						  				<span class="product-list__old-price">2147 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
+						  				<span class="product-price__old">2147 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum dolor</div>
 										<div class="product-list__btn-wrap">
@@ -50,9 +95,9 @@
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/2_1.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
-						  				<span class="product-list__old-price">2147 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
+						  				<span class="product-price__old">2147 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quas?</div>
 										<div class="product-list__btn-wrap">
@@ -66,9 +111,9 @@
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/3.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
-						  				<span class="product-list__old-price">2147 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
+						  				<span class="product-price__old">2147 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum dolor</div>
 						  			<div class="product-list__btn-wrap">
@@ -82,8 +127,8 @@
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/4.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum dolor sit amet, consectetur.</div>
 						  			<div class="product-list__btn-wrap">
@@ -97,8 +142,8 @@
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/5.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum dolor sit.</div>
 						  			<div class="product-list__btn-wrap">
@@ -112,8 +157,8 @@
 						  			<a class="product-list__link">
 						  				<img src="img/Featured Products/6.png" alt="" class="product-list__img">
 						  			</a>
-						  			<div class="product-list__price">
-						  				<span class="product-list__current-price">2567 грн</span>
+						  			<div class="product-price">
+						  				<span class="product-price__current">2567 грн</span>
 						  			</div>
 						  			<div class="product-list__name">Lorem ipsum.</div>
 						  			<div class="product-list__btn-wrap">
@@ -121,7 +166,20 @@
 						  			</div>
 						  		</div>
 						  	</div>
-						  </div>				  	
+						  </div>
+
+						  <div class="category-products-list__pagination">
+
+							  <!-- Pagination -->
+							  <ul class="pagination">
+							    <li><a href="#">&laquo;</a></li>
+							    <li class="active"><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">&raquo;</a></li>
+							  </ul>		  	
+							  <!-- End Pagination -->
+							 </div>	  	
 					  	
 					  </div>
 				  </div>

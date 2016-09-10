@@ -1,0 +1,58 @@
+<!-- @@master  = ../template/main.html {"title":"Home"} -->
+<!-- @@block  =  content-->
+
+<!-- Main -->
+
+<div class="page__main-line">
+	<div class="page__main-wrap">
+		<div class="main">
+			
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Library</a></li>
+			  <li class="active">Data</li>
+			</ol>	
+
+			<div class="contact">
+				<div class="contact__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolorem voluptas nemo, eaque dolor eius eligendi quod quibusdam? Vitae, optio aut, voluptas cupiditate blanditiis ipsam maiores velit assumenda eaque, quis accusantium! Fuga sed quae, fugiat saepe. Reprehenderit ab at ratione!</div>
+				<div class="contact__form">
+					<form class="contact-form">
+						<div class="contact-form__name">
+							<label class="contact-form-label">
+								<span class="contact-form-label__name">Имя:</span>
+								<input type="text" class="contact-form-input" required="required">
+							</label>
+						</div>
+						<div class="contact-form__email">
+							<label class="contact-form-label">
+								<span class="contact-form-label__name">Email:</span>
+								<input type="email" class="contact-form-input" required="required">
+							</label>
+						</div>
+						<div class="contact-form__subject">
+							<label class="contact-form-label">
+								<span class="contact-form-label__name">Тема:</span>
+								<input type="text" class="contact-form-input" required="required">
+							</label>
+						</div>
+						<div class="contact-form__message">
+							<label class="contact-form-label">
+								<span class="contact-form-label__name">Сообщение:</span>
+								<textarea name="message" class="contact-form-textarea" required="required"></textarea>
+							</label>
+						</div>
+						<div class="contact-form__submit">
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<!-- End Main -->
+
+<!-- @@close-->

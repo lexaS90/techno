@@ -12,20 +12,11 @@ body{
     font-family: Lato, $verdana;
 }
 
-input{
+input, textarea{
     border:1px solid #d6d4d4;
     color: #888682;
     font-size: em(14px);
     border-radius: 2px;
-}
-
-a{
-    @include transition(all 0.1s ease-out);
-    &:hover,
-    &:focus{
-        color: $accentColor;
-        text-decoration: none;
-    }
 }
 
 b, strong{
@@ -34,6 +25,12 @@ b, strong{
 
 img{
     max-width: 100%;
+}
+
+.page__caption{
+    font-size: em(18px);
+    text-transform: uppercase;
+    margin-top: 0;
 }
 
 .g-list{
@@ -175,7 +172,52 @@ img{
     }
 }
 
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+    background-color: $accentColor;
+    border-color: $accentColor;
+}
 
+.pagination > li > a, .pagination > li > span{
+    color: $accentColor;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus{
+    color: $accentColor;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    font-size: em(13px);
+    a{
+        color: $accentColor;
+    }
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    color: $accentColor;
+}
+
+.nav-tabs > li > a{
+    font-size: em(14px);
+}
+
+.tab-content{
+    padding: 14px;
+}
+
+.fotorama__thumb-border{
+    border-color: $accentColor;
+}
+
+a{
+    @include transition(all 0.1s ease-out);
+    color: #333;
+    &:hover,
+    &:focus{
+        color: $accentColor;
+        text-decoration: none;
+    }
+}
 
 /*
  * Remove text-shadow in selection highlight:

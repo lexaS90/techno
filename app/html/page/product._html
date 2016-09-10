@@ -1,0 +1,93 @@
+<!-- @@master  = ../template/main.html {"title":"Home"} -->
+<!-- @@block  =  content-->
+
+<!-- Main -->
+
+<div class="page__main-line">
+	<div class="page__main-wrap">
+		<div class="main">
+			
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Library</a></li>
+			  <li class="active">Data</li>
+			</ol>	
+
+			<div class="product">
+				<div class="product__gallery">
+					<div class="product-gallery" data-nav="thumbs">
+					  <img class="product-gallery__img" src="img/Featured Products/2_1.png">
+					  <img class="product-gallery__img" src="img/Featured Products/2_2.png">
+					  <img class="product-gallery__img" src="img/Featured Products/2_3.png">
+					</div>
+				</div>
+				<div class="product__content">
+					<div class="product-content">
+						<div class="product-content__left">
+							<div class="product-content__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+							<div class="product-content__prop">
+								<ul class="g-list" class="product-prop">
+									<li class="product-prop__item"><strong>Доступность:</strong> На складе</li>
+									<li class="product-prop__item"><strong>Код товара:</strong> 3645647</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product-content__right">
+							<div class="product-content__price product-price">
+			  				<span class="product-price__current">2567 грн</span>
+			  				<span class="product-price__old">2147 грн</span>
+			  			</div>
+							<div class="product-content__count product-count">
+								<input type="number" class="product-count__input" min="1" value="1">
+							</div>
+							<div class="product-content__btn-wrap">
+								<a href="#" class="btn btn-primary product-list__btn">Добавить</a>
+							</div>
+						</div>
+						<div class="product-content__bottom">
+
+						<ul class="nav nav-tabs" role="tablist">
+						  <li class="active"><a href="#descr" data-toggle="tab">Описание</a></li>
+						  <li><a href="#сhar" data-toggle="tab">Характеристики</a></li>
+						  <!-- <li><a href="#reviews" data-toggle="tab">Отзывы</a></li> -->
+						</ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active product-content__descr" id="descr">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque a soluta cupiditate. Veritatis ut necessitatibus vero iste, modi natus deleniti.</p>
+					    </div>
+					    <div role="tabpanel" class="tab-pane product-content__char" id="сhar">
+						    <ul class="product-char">
+						    	<li class="product-char__item">
+						    		<div class="product-char__type">Основные</div>
+							    	<ul class="g-list" class="product-prop">
+											<li class="product-prop__item"><strong>Lorem:</strong> Lorem ipsum dolor.</li>
+											<li class="product-prop__item"><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit.</li>
+										</ul>
+									</li>
+									<li class="product-char__item">
+						    		<div class="product-char__type">Основные</div>
+							    	<ul class="g-list" class="product-prop">
+											<li class="product-prop__item"><strong>Lorem:</strong> Lorem ipsum dolor.</li>
+											<li class="product-prop__item"><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit.</li>
+										</ul>
+									</li>
+								</ul>
+					    </div>
+					    <!-- <div role="tabpanel" class="tab-pane" id="reviews">Отзывы</div> -->
+					  </div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<!-- End Main -->
+
+<!-- @@close-->
