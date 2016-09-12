@@ -67,7 +67,7 @@ gulp.task('extend', function () {
  */
 
 gulp.task('sass', function () {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/**/main.scss')
     .pipe(sass({includePaths: require('node-bourbon').includePaths}).on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('app/css/'))

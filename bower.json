@@ -38,7 +38,7 @@
     "owl-carousel": {
       "main": [
         "./owl-carousel/owl.carousel.css",
-        "./owl-carousel/owl.carousel.min.js"
+        "./owl-carousel/owl.carousel.js"
       ]
     }
   },

@@ -4,16 +4,16 @@
 
 // Reset and dependencies
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/print";
 //@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/type";
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/code";
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 //@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-//@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
